@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점수 판단</title>
+</head>
+<script>
+    let number = prompt('점수를 알려주세요.');
+    if (number > 90) {
+        alert('A입니다.');
+    }
+    else if (number > 80) {
+        alert('B입니다.');
+    }
+    else if (number > 70) {
+        alert('C입니다.');
+    }
+    else if (number > 60) {
+        alert('E입니다.');
+    }
+    else if (number > 50) {
+        alert('F입니다.');
+    }
+
+    switch( parseInt(number/10) ) {
+        case 10:
+        case 9:
+            alert('A입니다.');
+            break;
+        case 8:
+            alert('B입니다.');
+            break;
+        case 7:
+            alert('C입니다.');
+            break;
+        case 6:
+            alert('D입니다.');
+            break;
+        default:
+            alert('F입니다.');
+            break;
+    }
+
+    switch(True) {
+        case number > 90:
+            alert('A입니다');
+            break;
+        default:
+            alert('F입니다.');
+            break;
+    }
+
+</script>
+<body>
+    <h1>점수 판단</h1>    
+</body>
+</html>
