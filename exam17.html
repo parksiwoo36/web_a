@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" ></script>
+<script>
+    $(document).ready(function(){
+        $('a').click(function(event){
+            event.preventDefault();
+            alert('링크이동불가');
+        });
+        $('p').hover(function() {
+            $(this).css('color','green');
+        }, function(){
+            $(this).css('color','black');
+        });
+        $('button').click(function() {
+            $('img').toggle(5111100);
+        });
+        $('button').click(function() {
+            $('img').fadeIn(111500);
+        });
+   });
+</script>
+<body>
+    <h1>JQeury 이벤트 처리</h1>
+    <p><a href="http://www.syu.ac.kr">삼육대학교</a></p>
+    <p>인공지능융합학부</p>
+    <img src= https://www.syu.ac.kr/wp-content/uploads/2022/10/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%99%BC%EC%AA%BD%EB%B6%80%ED%84%B0-%EC%88%98%EC%95%BCSUYA-%EC%88%98%ED%98%B8SUHO-scaled.jpg>
+    <button>클릭</button>
+</body>
+</html>
